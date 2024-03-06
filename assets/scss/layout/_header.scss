@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.nav-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  min-height: $component-min-height + 20px;
+  padding: 16px 24px;
+  z-index: 9999;
+  @include flex-row-center;
+
+  @include media("<tablet") {
+    position: fixed;
+
+    &.activated {
+      background: $color-header;
+      box-shadow: 0 4px 2px 0px rgba(200, 200, 200, 0.2);
+      z-index: 2;
+    }
+  }
+
+  .content {
+    width: 1024px;
+    @include flex-row-center-start;
+
+    &.spread {
+      @include flex-row-center-between;
+    }
+
+    @include media("<tablet") {
+      width: 100%;
+      margin: auto;
+    }
+
+    .brand {
+      .brand-link {
+        @include flex-row-center-start;
+        text-decoration: none;
+      }
+
+      transition: all 0.2s ease-in-out;
+    }
+
+    .nav-list {
+      @include flex-row-center-end;
+      @include media("<tablet") {
+        display: none;
+      }
+    }
+
+    .side-menu {
+      display: none;
+
+      @include media("<tablet") {
+        display: block;
+      }
+    }
+  }
+}

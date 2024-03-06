@@ -1,0 +1,14 @@
+.rating {
+  @include flex-row-center;
+  gap: 2px;
+  flex: none;
+
+  i {
+    font-size: 24px;
+    color: $yellow;
+
+    &.empty-star {
+      color: $grey;
+    }
+  }
+}

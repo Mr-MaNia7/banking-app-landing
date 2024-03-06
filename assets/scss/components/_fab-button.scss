@@ -1,0 +1,42 @@
+.fab-button {
+  @include flex-row-center;
+  text-decoration: none !important;
+  border-radius: 56px;
+  width: 56px;
+  height: 56px;
+  flex: none;
+  padding: 4px;
+  box-shadow: 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12);
+
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(138, 138, 138, 0.15);
+  -moz-box-shadow: 1px 1px 5px 5px rgba(138, 138, 138, 0.15);
+  box-shadow: 1px 1px 5px 5px rgba(138, 138, 138, 0.15);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+
+  img {
+    border: 0;
+    width: 32px;
+  }
+
+  &.th {
+    background: $accent-color;
+
+    &:hover {
+      background: $accent-color-dark;
+    }
+  }
+
+  &.ph {
+    background: #428cff;
+
+    &:hover {
+      background: #1a77f2;
+    }
+  }
+}

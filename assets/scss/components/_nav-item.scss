@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the navigation item component.
+// -----------------------------------------------------------------------------
+
+.nav-item {
+  padding: 8px;
+  height: 36px;
+  text-decoration: none !important;
+  width: auto;
+  border-bottom: 2px solid transparent;
+  font-weight: normal;
+  font-size: $font-size-body;
+  color: rgba($primary-dark-color, 0.6);
+  margin: auto 2px;
+
+
+  @include on-event {
+    color: $primary-dark-color;
+  }
+
+  &.active {
+    font-weight: 700;
+    color: $primary-dark-color !important;
+    border-color: $primary-dark-color !important;
+  }
+
+}

@@ -1,0 +1,96 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+	min-width: 100px;
+	outline: none;
+	box-shadow: none;
+	transition: all 0.3s ease-in-out;
+	border: 2px solid transparent;
+	font-size: $font-size-body;
+    @include flex-row-center;
+	text-decoration: none !important;
+
+	& .icon-left {
+		margin-right: 8px;
+	}
+
+	& .icon-right {
+		margin-left: 8px;
+	}
+}
+
+.btn-pill {
+	padding: 8px 24px 8px 24px;
+	height: 48px;
+	font-weight: 400;
+	border-radius: $border-radius-lg;
+
+	&.default {
+		background: $tertiary-color;
+		color: $color-light;
+
+		@include on-event {
+			background: transparent;
+			color: $tertiary-color;
+			border-color: $tertiary-color;
+		}
+	}
+
+	&.light {
+		background: $color-light;
+		color: $primary-color;
+
+		@include on-event {
+			background: transparent;
+			color: $color-light;
+			border-color: $color-light;
+		}
+	}
+
+	&.accent {
+		background: $accent-color;
+		color: $color-light;
+
+		@include on-event {
+			background: transparent;
+			color: $accent-color;
+			border-color: $accent-color;
+		}
+	}
+}
+
+/// Button variant - link
+.link-btn {
+	padding: 0px;
+	font-weight: 400;
+	background: transparent;
+	color: $accent-color;
+
+	@include on-event {
+		color: $primary-color;
+	}
+}
+
+/// Button variant - icon button
+.btn-icon {
+	width: 48px;
+	height: 48px;
+	border-radius: 48px;
+	color: $mid-grey;
+	flex: none !important;
+	min-width: unset;
+    background: transparent;
+    border-radius: 48px;
+    font-size: 24px;
+  
+	&.highlighted{
+	  background: $light-grey;
+	}
+  
+	@include on-event {
+	  color: $accent-color;
+	}
+  }
+  

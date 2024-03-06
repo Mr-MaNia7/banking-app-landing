@@ -1,0 +1,60 @@
+<!-- Footer -->
+<div class="footer">
+  <div class="ftr-bottom">
+    <div class="container ftr-bt-content">
+      <div class="ftr-section company-desc">
+        <img
+          src="/finn-landing/assets/vectors/finn.svg"
+          alt="Finn logo"
+          height="27"
+        />
+        <p>
+          {{translate "FOOTER.SLOGAN" lang}}
+        </p>
+
+        {{#if (compare lang "===" "ph")}}
+          <div class="security-regulated">
+            <i class="icn mdi mdi-shield"></i>
+            <p data-i18n="footer-security">
+              Lisensyado sa SEC
+            </p>
+          </div>
+        {{/if}}
+      </div>
+
+      <div class="ftr-section">
+        <h5> {{translate "FOOTER.CONTACT_US.TITLE" lang}}</h5>
+        <p>
+          {{translate "FOOTER.CONTACT_US.SUB_TITLE" lang}}
+          {{#if (compare lang "===" "ph")}}
+            <a href="https://m.me/finn.app.ph" target="_blank">
+              {{translate "FOOTER.CONTACT_US.LINK" lang}}
+            </a>
+          {{/if}}
+        </p>
+
+        <ul>
+          <li>
+            <span>
+              <i class="icn mdi mdi-facebook"></i>
+              <a href="{{fbLink lang}}" target="_blank">
+                facebook.com/FINN
+              </a>
+            </span>
+          </li>
+
+          {{#if (compare lang "===" "ph")}}
+            <li>
+              <span>
+                <i class="icn mdi mdi-email"></i>
+                <a href="mailto:info@finn-app.com" target="_blank">
+                  info@finn-app.com
+                </a>
+              </span>
+            </li>
+          {{/if}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+{
+  "prod": {
+    "isProd": true,
+    "gtmKey": "GTM-KPWXZ3F",
+    "jsConfig": {
+      "finnUrl": "https://firebase-api.finn-app.com/api/users/country-info"
+    }
+  },
+  "dev": {
+    "isProd": false,
+    "gtmKey": "GTM-KPWXZ3F", 
+    "jsConfig": {
+      "finnUrl": "https://firebase-api-dev.finn-app.com/api/users/country-info"
+    }
+  }
+}

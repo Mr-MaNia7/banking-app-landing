@@ -1,0 +1,118 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $color-light;
+  font-family: $text-font-stack !important;
+
+  &.ph {
+    font-family: $text-font-stack-ph !important;
+
+    * {
+      font-family: $text-font-stack-ph !important;
+    }
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.main {
+  width: 100%;
+  margin: auto 0px;
+  min-height: 100vh;
+  box-sizing: inherit;
+  position: relative;
+
+  &.f-box {
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(center);
+    @include justify-content(center);
+  }
+
+  &.light {
+    background: $color-light;
+  }
+}
+
+.container {
+  max-width: $max-width;
+  width: 100%;
+  margin: auto;
+}
+
+/**
+  * Basic styles for links
+  */
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  @include on-event {
+    color: $primary-dark-color;
+    text-decoration: underline;
+  }
+}
+
+// scroll reveal
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+.fab-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  border-radius: 56px;
+  width: 56px;
+  height: 56px;
+  flex: none;
+  padding: 4px;
+  box-shadow: 3px 5px -1px rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.14),
+    0 1px 18px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 1px 5px 5px rgba(138, 138, 138, 0.15);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+}
+.fab-button img {
+  border: 0;
+  width: 32px;
+}
+.fab-button.th {
+  background: #3bbf41;
+}
+.fab-button.th:hover {
+  background: #2f9934;
+}
+.fab-button.ph {
+  background: #428cff;
+}
+.fab-button.ph:hover {
+  background: #1a77f2;
+}

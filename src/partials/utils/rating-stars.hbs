@@ -1,0 +1,11 @@
+<div class="rating">
+  {{#each (range 1 5)}}
+    {{#if (isFullStar @index ../rating)}}
+      <i class="mdi mdi-star"></i>
+    {{else if (isHalfStar @index ../rating)}}
+      <i class="mdi mdi-star-half"></i>
+    {{else}}
+      <i class="mdi mdi-star empty-star"></i>
+    {{/if}}
+  {{/each}}
+</div>

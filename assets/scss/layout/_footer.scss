@@ -1,0 +1,250 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site
+// -----------------------------------------------------------------------------
+.footer {
+  width: 100%;
+  margin: 0px auto;
+  min-height: $component-min-height;
+  background: $color-light;
+  padding: 0px;
+  @include flex-col-center;
+
+  @include media("<=phone") {
+    height: auto;
+  }
+
+  .ftr-banner {
+    width: 100%;
+    margin: 0px auto;
+    min-height: 400px;
+    position: relative;
+    background: $primary-color;
+    overflow: hidden;
+    @include flex-col-center;
+
+    @include media("<=1100px") {
+      padding: 60px;
+    }
+
+    @include media("<=778px") {
+      padding: 50px 32px;
+    }
+
+    @include media("<=512px") {
+      padding: 50px 24px;
+    }
+
+    .fb-graphic {
+      position: absolute;
+      width: 520px;
+      height: auto;
+      right: 100px;
+      mix-blend-mode: soft-light;
+      bottom: -150px;
+      transform: rotate(-21.02deg);
+      filter: grayscale(1);
+    }
+
+    .fb-content {
+      @include flex-col-start;
+
+      .fbc-header {
+        font-size: $font-size-h3;
+        color: $color-light;
+        font-weight: 700;
+      }
+
+      .fbc-desc {
+        font-size: $font-size-body;
+        color: rgba($color: $color-light, $alpha: 0.82);
+        font-weight: 300;
+      }
+
+      .fbc-header,
+      .fbc-desc {
+        max-width: 400px;
+        text-align: left;
+        margin: 0px 0px 24px 0px;
+
+        @include media("<=phone") {
+          width: 100%;
+          margin: 0px auto 24px auto;
+        }
+      }
+    }
+  }
+
+  .ftr-bottom {
+    width: 100%;
+    margin: 0px auto;
+    min-height: $component-min-height;
+    padding: 50px 0px;
+    background: $primary-dark-color;
+    @include flex-row-center;
+
+    @include media("<=1100px") {
+      padding: 50px 60px;
+    }
+
+    @include media("<=778px") {
+      padding: 50px 32px;
+    }
+
+    @include media("<=512px") {
+      padding: 50px 24px;
+    }
+
+    .ftr-bt-content {
+      @include flex-row-start-between;
+
+      @include media("<=992px") {
+        flex-wrap: wrap;
+      }
+
+      .ftr-section {
+        @include flex-col-start;
+        @include media("<=992px") {
+          width: 100%;
+          margin: 16px 0px;
+        }
+
+        max-width: 300px;
+
+        &.company-desc {
+          width: 320px;
+        }
+
+        p {
+          font-size: $font-size-body;
+          color: rgba($color: $color-light, $alpha: 0.62);
+          margin-top: 16px;
+
+          a {
+            text-decoration: none !important;
+            transition: all 0.2s ease-in-out;
+            color: rgba($color: $color-light, $alpha: 0.62) !important;
+
+            @include on-event {
+              color: $color-light !important;
+            }
+          }
+        }
+
+        h5 {
+          color: $color-light;
+          text-align: left;
+          font-size: $font-size-h5;
+          font-weight: 700;
+          margin: 0px;
+        }
+
+        ul {
+          @include flex-col-start;
+          list-style-type: none;
+          padding: 0px;
+          margin: 16px 0px 0px 0px;
+
+          li {
+            padding: 0px;
+            margin: 0px 0px 4px 0px;
+
+            a {
+              transition: all 0.2s ease-in-out;
+              text-decoration: none;
+              color: rgba($color: $color-light, $alpha: 0.62);
+              font-size: $font-size-body;
+
+              @include on-event {
+                color: $color-light;
+              }
+            }
+
+            span {
+              @include flex-row-center-start;
+              font-size: $font-size-body;
+              color: rgba($color: $color-light, $alpha: 0.82);
+
+              .icn {
+                font-size: $font-size-h5;
+                margin-right: 8px;
+              }
+            }
+          }
+        }
+
+        .security-regulated {
+          @include flex-row-center-start;
+          gap: 8px;
+
+          margin-top: 24px;
+          width: 100%;
+          border-radius: $border-radius;
+
+          p {
+            flex-grow: 1;
+            font-size: $font-size-small + 1px;
+            padding: 0px;
+            margin: 0px;
+			color: $accent-color;
+            line-height: $font-size-h6;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			font-weight: 300;
+			position: relative;
+			top: 1px;
+          }
+
+          .icn {
+            font-size: $font-size-h5;
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  }
+
+  &.minimal {
+    .content {
+      max-width: 1024px;
+      width: 100%;
+      margin: auto;
+      @include flex-row-center-between;
+
+      .copyright {
+        font-style: normal;
+        font-weight: normal;
+        font-size: $font-size-body;
+        color: $mid-grey;
+
+        @include media("<=768px") {
+          text-align: center;
+        }
+      }
+
+      span {
+        @include flex-row-center-start;
+        font-size: $font-size-body;
+        color: rgba($color: $color-light, $alpha: 0.82);
+
+        .icn {
+          margin-right: 8px;
+        }
+
+        @include media("<=768px") {
+          margin-bottom: 8px;
+        }
+      }
+
+      @include media("<=1100px") {
+        padding: 0px 60px;
+      }
+
+      @include media("<=768px") {
+        @include flex-col-center;
+        flex-direction: column-reverse;
+
+        padding: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "SIGN_UP": "Sign up na!",
+  "HEADER": {
+    "TITLE": {
+      "START": "Mabilis na cash",
+      "HIGHLIGHT": "basta may QuickCash!",
+      "END": ""
+    },
+    "SUB_TITLE": "Mag-advance ng sahod up to P6,500. Automatic na mababawasan sa araw ng sweldo. Lisensyado sa SEC para siguradong ligtas ang iyong account",
+    "REVIEWS": "Makarinig mula sa 60,000 happy users!"
+  },
+  "LOW_INTEREST": {
+    "TITLE": "0% interest!",
+    "SUB_TITLE": "Di mo na kailangan mag-loan. Pwede na mag-advance ng sweldo para makakuha ng cash nang walang extra fees!"
+  },
+  "LEVEL_UP_CTA": {
+    "TITLE": "Kayang itawid ang mga pang-araw-araw na gastusin",
+    "SUB_TITLE": "Pagod sa kakahintay ng sweldo kada katapusan ng buwan? I-enjoy ang aming advance payday system. Sa Finn, pwede mong i-access ang iyong sweldo nang maaga para maitawid ang pangangailang ng buong pamilya. Ang aming systema ay pinagkakatiwalaan ng higit sa 60,000 users."
+  },
+  "EARLY_PAYDAY": {
+    "TITLE": "Sa Finn, 'di mo na kailangan maranasan ang petsa de peligro!",
+    "SUB_TITLE": "Dahil makukuha mo na ang iyong sweldo nang maaga, kayang kaya mo na itawid ang pangangailan ng buong pamilya!",
+    "HIGHLIGHT": ""
+  },
+  "LINK_ACCOUNT": {
+    "TITLE": "Palaging Ligtas Ang Iyong Bank Account",
+    "SUB_TITLE": "Mag-withdraw ng sahod nang maaga. Mababawasan sa araw ng sweldo. Mabilis, madali, at siguradong ligtas."
+  },
+  "MISSION_STATEMENT": {
+    "TITLE": {
+      "START": "Ang aming",
+      "HIGHLIGHT": "2025",
+      "END": "goals"
+    },
+    "GOAL_1": {
+      "TITLE": {
+        "START": "",
+        "HIGHLIGHT": "Goal 1: ",
+        "END": "Tulungan ang 1 milyong Pinoy"
+      },
+      "SUB_TITLE": "Para kayang itawid ang mga pang-araw-araw na gastusin"
+    },
+    "GOAL_2": {
+      "TITLE": {
+        "START": "",
+        "HIGHLIGHT": "Goal 2: ",
+        "END": "Dagdagan ng 10% ang kita"
+      },
+      "SUB_TITLE": "Kumita ng karagdagang pera mula sa part-time na trabaho o sa pagtuto ng mga importanteng skills"
+    },
+    "GOAL_3": {
+      "TITLE": {
+        "START": "",
+        "HIGHLIGHT": "Goal 3: ",
+        "END": "Mag-budget ng ₱1.5 Bilyon "
+      },
+      "SUB_TITLE": "Bigyan ng oportunidad ang mga empleyado na makakuha ng sahod nang maaga"
+    }
+  },
+  "FLEXIBILITY_CTA": {
+    "TITLE": "Finally, makukuha mo na ang sweldo kung kailan mo kailangan.",
+    "SUB_TITLE": "Kunin agad ang iyong sweldo sa aming salary advance na serbisyo. Sa Finn, 'di mo na kailangan maghintay sa araw ng sweldo kada buwan o mag-alala kapag may emergency na gastusin."
+  },
+  "FOOTER": {
+    "SLOGAN": "Basta may Finn, kayang itawid ang araw-araw!",
+    "CONTACT_US": {
+      "TITLE": "Contact Us",
+      "SUB_TITLE": "Para sa karagdagang tulong, i-chat kami sa ",
+      "LINK": "Messenger"
+    }
+  }
+}

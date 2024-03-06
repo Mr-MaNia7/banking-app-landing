@@ -1,0 +1,64 @@
+.accordion {
+	width: 100%;
+	margin: 8px auto;
+	@include flex-col-center;
+
+	&:not(:last-child) {
+		border-bottom: 1px solid $grey;
+	}
+
+	.accordion-header{
+		width: 100%;
+		margin: 0px auto;
+		@include flex-row-center-start;
+	}
+
+	.accordion-header {
+		cursor: pointer;
+        padding: 8px 0px 25px 0px;
+
+		.ah-title {
+			text-align: left;
+			flex-grow: 1;
+			font-weight: 400;
+			font-size: $font-size-h6;
+			color: $text-color;
+			margin-right: 8px;
+		}
+
+		.ah-tgl {
+			color: $mid-grey;
+			font-size: 16px;
+		}
+	}
+
+	.accordion-content {
+        padding: 0px;
+		visibility: hidden;
+		height: 0;
+	}
+
+	p {
+		font-size: $font-size-body;
+		width: 100%;
+		margin: auto;
+		color: $dark-grey;
+        font-weight: 300;
+	}
+
+	&.open {
+		.accordion-content {
+			visibility: visible;
+			height: auto;
+            padding: 0px 0px 16px 0px;
+		}
+        
+        .ah-title {
+            font-weight: 600;
+        }
+
+		.ah-tgl {
+			color: $black;
+		}
+	}
+}

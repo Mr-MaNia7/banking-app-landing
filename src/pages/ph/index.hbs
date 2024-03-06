@@ -1,0 +1,29 @@
+{{#extend "layout"}}
+	{{#content "head" mode="append"}}
+	    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css" />
+    	<link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css" />
+
+		<script>
+			window.gtm_country_code = "PH";
+		</script>
+	{{/content}}
+
+
+	{{#content "body" mode="append"}}
+		{{> header }}
+		{{> selling-points }}
+		{{> low-interest }}
+		{{> level-up-cta}}
+		{{> early-payday }}
+		{{> link-account }}
+
+		{{> testimonials-ph }}
+
+		{{> milestones }}
+		{{> flexibility-cta }}
+
+		{{!-- Chat Bubble --}}
+		{{> fab-fb }}
+	{{/content}}
+{{/extend}}

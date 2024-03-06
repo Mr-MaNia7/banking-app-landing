@@ -1,0 +1,26 @@
+{{#extend "layout"}}
+	{{#content "head" mode="append"}}
+		<link
+		href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800;900&family=Syne:wght@700&family=Permanent+Marker&display=swap"
+		rel="stylesheet" />
+		<script>
+			window.gtm_country_code = "TH";
+		</script>
+	{{/content}}
+
+  {{#content "body" mode="append"}}
+		{{> header }}
+		{{> supported-banks }}
+		{{> low-interest }}
+		{{> level-up-cta}}
+		{{> early-payday }}
+		{{> link-account }}
+		{{> testimonials-th }}
+	  	{{> milestones }}
+		{{> flexibility-cta }}
+
+		{{!-- Chat Bubble --}}
+		{{> fab-line }}
+  {{/content}}
+{{/extend}} 
+
